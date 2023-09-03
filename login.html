@@ -1,0 +1,184 @@
+<!-- Html contents -->
+<html>
+
+    <!-- Head contents -->
+    <head>
+
+        <!-- Title for the website -->
+        <title>
+            Index
+        </title>
+
+		<!-- Bootstrap CSS -->
+		<link href = "https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel = "stylesheet" integrity = "sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin = "anonymous">
+
+		<!-- Bootstrap JS -->
+		<script src = "https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity = "sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin = "anonymous"></script>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+		<!-- Style CSS -->
+		<link rel = "stylesheet" href = "css/login.css">
+
+		<!-- Allows the website to responsive according to the screen resolution -->
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1">
+
+    </head>
+
+    <!-- Body contents -->
+    <body>
+
+		<!--
+		* Title: Bootstrap Navbar
+		* Author: getbootstrap.com
+		* Date: 2021
+		* Availability: https://getbootstrap.com/docs/5.0/components/navbar/
+		-->
+
+		<!-- Section one -->
+		<section class = "hero">
+
+			<!-- Navigation Bar (sticky-top) -->
+			<nav class = "navbar navbar-expand-lg navbar-light p-md-3">
+
+				<!-- Add padding on both sides of the nav bar -->
+				<div class = "container">
+
+					<!-- Company name and logo -->
+					<a class = "navbar-brand" href = "index.html">
+                        <img src="https://whcompare.com/wp-content/uploads/cloud-server.svg" width = "75" height = "75">
+                        VPS Provider
+					</a>
+
+					<!-- Navigation bar toggler when the screen resolution decreases -->
+					<button class = "navbar-toggler collapsed " data-bs-toggle = "collapse" data-bs-target = "#navigationBar">
+						<span class = "navbar-toggler-icon"></span>
+					</button>
+
+					<!-- Collapse the navigation bar if the screen size meets the breakpoint -->
+					<div class = "collapse navbar-collapse" id = "navigationBar">
+
+						<!-- Create a unordered list to list all the quick links -->
+						<div class = "navbar-nav ms-auto">
+
+							<!-- Navigation bar links -->
+							<ul class = "navbar-nav">
+
+								<!-- Home -->
+								<a class = "nav-link" aria-current = "page" href = "index.html">
+									Home
+								</a>
+
+								<!-- About -->
+								<a class = "nav-link" href = "about.html">
+									About
+								</a>
+
+								<!-- Contact -->
+								<a class = "nav-link" href = "contact.html">
+									Contact
+								</a>
+
+                                <!-- Login -->
+								<a class = "nav-link" href = "login.html">
+									Login
+								</a>
+
+                                <!-- Register -->
+								<a class = "nav-link" href = "register.html">
+									Register
+								</a>
+
+							</div>
+
+						</ul>
+
+					</div>
+
+				</div>
+
+			</nav>
+
+            <!--
+    		* Title: Bootstrap Form
+    		* Author: getbootstrap.com
+    		* Date: 2021
+    		* Availability: https://getbootstrap.com/docs/5.0/forms/overview/
+    		-->
+
+            <!-- Register form -->
+            <div class = "container">
+
+                <!-- Creating a form action in order to login -->
+                <form method = "post" action = "php/login.php">
+
+                    <!-- Creating rows for the fields -->
+                    <div class = "row justify-content-center">
+
+                        <!-- Creating columns for the fields -->
+                        <div class = "col-12 col-md-8 col-lg-8 col-xl-6">
+
+                            <!-- Creating the first input field -->
+                            <div class = "row">
+
+                                <!-- Centering all the text to the middle -->
+                                <div class = "col text-center">
+
+                                    <!-- Title of the form -->
+                                    <h1 style = "color: white;">
+                                        Login
+                                    </h1>
+
+                                </div>
+
+                            </div>
+
+                            <!-- Username field -->
+                            <div class = "row align-items-center">
+
+                                <!-- Position of the username field -->
+                                <div class = "col mt-4">
+
+                                    <!-- Username input -->
+                                    <input type = "text" class = "form-control" placeholder = "Username" name = "login-username" id = "login-username">
+
+                                </div>
+
+                            </div>
+
+                            <!-- Password field -->
+                            <div class = "row align-items-center mt-4">
+
+                                <!-- Position of the password field -->
+                                <div class = "col">
+
+                                    <!-- Password input -->
+                                    <input type = "password" class = "form-control" placeholder = "Password" name = "login-password" id = "login-password">
+
+                                </div>
+
+                            </div>
+
+                            <!-- Login button -->
+                            <button class = "btn btn-primary mt-4">
+                                Login
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </section>
+
+        <!-- Javascript file -->
+        <script type = "text/javascript" src = "js/login.js"></script>
+
+    </body>
+
+</html>

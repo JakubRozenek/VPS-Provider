@@ -1,0 +1,146 @@
+/* Import custom font style */
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Poppins:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+/* Apply to everything */
+* {
+
+	/* Font style in the navigation bar */
+	font-family: Montserrat, sans-serif;
+
+	/* Remove all the margin on the website */
+	margin: 0;
+
+	/* Remove all the padding on the website */
+	padding: 0;
+
+    /* Background color */
+    background-color: rgba(24, 13, 91, 1.0);
+
+	/* Change the text to white when you hover over the name of the company */
+	color: rgba(255, 255, 255);
+}
+
+/* Body */
+body {
+	background-color: rgba(24, 13, 91, 1.0);
+}
+
+/* Section dividing the main page */
+section.hero-register {
+
+	/* Make the image the size of your viewport height */
+	height: 100vh;
+
+	/* Align the image to the middle of the screen */
+	text-align: center;
+
+	/* Make the image position relative */
+	position: relative;
+
+	/* Cover the entire section with the image */
+	background-size: cover;
+}
+
+
+/* Main navigation bar */
+.navbar {
+
+	/* Background color of the navigation bar */
+	background-color: transparent;
+}
+
+/* Navigation bar links */
+.navbar-dark .navbar-nav .nav-link {
+
+    /* Change color of the links text */
+    color: rgba(255, 255, 255, 1.0)!important;
+}
+
+/* If the screen resolution less than 320 px */
+@media (max-width: 480px) {
+
+    /* Navigation bar links */
+    .navbar-dark .navbar-nav .nav-link {
+
+        /* Change color of the links text */
+        color: rgba(0, 0, 0, 1.0)!important;
+    }
+}
+
+/* Navigation bar links when hovering */
+.navbar-dark .navbar-nav .nav-link:hover {
+
+    /* Change color of the links text */
+    color: rgba(255, 0, 0, 1.0)!important;
+}
+
+/* Home links */
+a.nav-link {
+
+    /* Size of the text */
+    font-size: 15px;
+}
+
+/* Logo text */
+a.navbar-brand {
+
+    /* Change color of the links text */
+    color: rgba(255, 255, 255, 1.0)!important;
+
+    /* Size of the text */
+    font-size: 18px;
+}
+
+/* Login form */
+.row.justify-content-center {
+
+	/* Move the login form downwards */
+	padding-top: 150px;
+}
+
+/* Text of the register form */
+label.form-check-label {
+
+    /* Color of the text */
+    color: rgba(255, 255, 255, 1.0);
+}
+
+/* Navigation bar links */
+.navbar-light .navbar-nav .nav-link {
+
+    /* Change color of the links text */
+    color: rgba(255, 255, 255, 1.0)!important;
+}
+
+/* If the screen resolution less than 320 px */
+@media (max-width: 480px) {
+
+    /* Navigation bar links */
+    .navbar-light .navbar-nav .nav-link {
+
+        /* Change color of the links text */
+        color: rgba(0, 0, 0, 1.0)!important;
+    }
+}
+
+/* Navigation bar links when hovering */
+.navbar-light .navbar-nav .nav-link:hover {
+
+    /* Change color of the links text */
+    color: rgba(255, 0, 0, 1.0)!important;
+}
+
+/* Login button */
+button.btn.btn-primary.mt-4 {
+
+	/* Make the button relative */
+	position: relative;
+
+	/* Move the text to the left by 44.50 % */
+    left: 44.5%;
+
+	/* Move the text upwards */
+	top: -10%;
+}

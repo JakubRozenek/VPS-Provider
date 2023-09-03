@@ -1,0 +1,343 @@
+/* Import custom font style */
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Poppins:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+/* Apply to everything */
+* {
+
+	/* Font style in the navigation bar */
+	font-family: Montserrat, sans-serif;
+
+	/* Remove all the margin on the website */
+	margin: 0;
+
+	/* Remove all the padding on the website */
+	padding: 0;
+
+	/* Change the text to white when you hover over the name of the company */
+	color: rgba(255, 255, 255);
+}
+
+/* Main navigation bar */
+.navbar {
+
+	/* Background color of the navigation bar */
+	background-color: transparent;
+}
+
+/* Navigation bar links */
+.navbar-light .navbar-nav .nav-link {
+
+    /* Change color of the links text */
+    color: rgba(255, 255, 255, 1.0)!important;
+}
+
+/* If the screen resolution less than 320 px */
+@media (max-width: 480px) {
+
+    /* Navigation bar links */
+    .navbar-light .navbar-nav .nav-link {
+
+        /* Change color of the links text */
+        color: rgba(0, 0, 0, 1.0)!important;
+    }
+}
+
+/* Navigation bar links when hovering */
+.navbar-light .navbar-nav .nav-link:hover {
+
+    /* Change color of the links text */
+    color: rgba(255, 0, 0, 1.0)!important;
+}
+
+/* Section dividing the main page */
+section.hero {
+
+	/* Make the image the size of your viewport height */
+	height: 100vh;
+
+	/* Align the image to the middle of the screen */
+	text-align: center;
+
+	/* Make the image position relative */
+	position: relative;
+
+	/* Load hero image on the landing page */
+	background-image: url("../images/background.jpg");
+
+	/* Cover the entire section with the image */
+	background-size: cover;
+}
+
+/* Hero title */
+p.hero-title {
+
+    /* Font of the hero title text */
+    font-family: 'Dosis', sans-serif;
+
+    /* Font size of the title text */
+    font-size: 45px;
+
+    /* Making the position of the text relative */
+    position: relative;
+
+    /* Float the image to the left of the screen */
+    float: left;
+
+    /* Move the text 20% from the top of the screen downwards */
+    top: 25%;
+
+    /* Move the text 50% from the left to the right */
+    left: 27%;
+
+    /* Transform the text to the middle */
+    transform: translate(-50%, 25%);
+}
+
+/* Hero title */
+p.hero-description {
+
+    /* Making the position of the text relative */
+    position: relative;
+
+    /* Float the image to the left of the screen */
+    float: left;
+
+    /* Move the text 20% from the top of the screen downwards */
+    top: 33%;
+
+    /* Move the text 50% from the left to the right */
+    left: -4%;
+
+    /* Transform the text to the middle */
+    transform: translate(-50%, 25%);
+}
+
+/* If the screen resolution less than 320 px */
+@media (max-width: 480px) {
+
+    /* Hero title */
+    p.hero-title {
+
+        /* Font of the hero title text */
+        font-family: 'Dosis', sans-serif!important;
+
+        /* Font size of the title text */
+        font-size: 25px!important;
+
+        /* Making the position of the text relative */
+        position: relative!important;
+
+        /* Float the image to the middle of the screen */
+        float: center!important;
+
+        /* Move the text 20% from the top of the screen downwards */
+        top: 20%!important;
+
+        /* Move the text 50% from the left to the right */
+        left: 50%!important;
+
+        /* Transform the text to the middle */
+        transform: translate(-50%, 25%)!important;
+    }
+
+    /* Hero title */
+    p.hero-description {
+
+        /* Making the position of the text relative */
+        position: relative;
+
+        /* Float the image to the middle of the screen */
+        float: center;
+
+        /* Move the text 20% from the top of the screen downwards */
+        top: 20%!important;
+
+        /* Move the text 50% from the left to the right */
+        left: 50%!important;
+
+        /* Transform the text to the middle */
+        transform: translate(-50%, 25%);
+    }
+
+	p.card-text {
+		color: rgba(0, 0, 0, 1.0)!important;
+		font-size: 17px!important;
+	}
+}
+
+/* Section for the card layouts */
+section.vps-pricing {
+
+    /* Height of the section */
+    height: 106vh;
+}
+
+/* Section for the card layouts */
+section.dedicated-servers-pricing {
+
+    /* Height of the section */
+    height: 106.1vh;
+
+    /* Color of the background */
+    background-color: rgba(24,13,91,255);
+}
+
+/* Card layout */
+.row {
+
+    /* Remove margin around the card */
+    margin: 100!important;
+}
+
+/* Actual card */
+.card.h-100 {
+
+    /* Move the cards in the middle */
+    top: -35%;
+
+    /* Remove all the border around the card
+    border: 0px;*/
+}
+
+/* Card title */
+.card-title {
+
+    /* Move the text to the middle */
+    text-align: center;
+
+    /* Font type */
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Description of the card */
+p.card-text {
+
+    /* Color of the text */
+    color: rgba(0, 0, 0, 1.0);
+
+    /* Size of the text */
+    font-size: 17px;
+
+    /* Margin between the border and text */
+    margin-inline: 100px;
+
+    /* Marin between the text */
+    line-height: 50px;
+}
+
+/* Title of the card */
+.card-title {
+
+    /* Color of the text */
+    color: rgba(0, 0, 0, 1.0);
+
+    /* Size of the text */
+    font-size: 25px;
+}
+
+/* Price text */
+.price {
+
+    /* Color of the text */
+    color: rgba(0, 0, 0, 1.0);
+
+    /* Font style / type */
+    font-family: 'Poppins', sans-serif;
+
+    /* Size of the text */
+    font-size: 25px;
+
+    /* Margin between the text */
+    line-height: 5;
+
+    /* Allign the text in the middle */
+    text-align: center;
+}
+
+/* Final price text */
+.final-price {
+
+    /* Color of the text */
+    color: rgba(0, 0, 0, 1.0);
+
+    /* Font style / type */
+    font-family: 'Poppins', sans-serif;
+
+    /* Size of the text */
+    font-size: 25px;
+
+    /* Allign the text in the middle */
+    text-align: center;
+}
+
+/* Final price for dedicated servers */
+.dedicated-final-price {
+
+    /* Color of the text */
+    color: rgba(0, 0, 0, 1.0);
+
+    /* Font style / type */
+    font-family: 'Poppins', sans-serif;
+
+    /* Size of the text */
+    font-size: 25px;
+
+    /* Allign the text in the middle */
+    text-align: center;
+
+    /* Margin between the text */
+    line-height: 4;
+}
+/* Card border */
+.card-body {
+
+    /* Make the height of the card 50% of the viewport */
+    height: 50vh;
+}
+
+/* Card border for the dedicated server card */
+.card-body-dedicated {
+
+    /* Make the height of the card 30% of the viewport */
+    height: 30vh;
+}
+
+/* Image inside of the card */
+img.card-img-top {
+
+    /* Add padding to the top of the image */
+     margin-top: 25px;
+
+}
+
+/* Buttons for prices */
+button.btn.btn-primary {
+
+	/* Make the button position relative */
+	position: relative;
+
+	/* Move the button 42% of the viewport down */
+	top: 42vh;
+
+	/* Move the button -99% of the viewport to the left */
+	left: -91vh;
+}
+
+/* If the screen resolution less than 320 px */
+@media (max-width: 480px) {
+
+	/* Buttons for prices */
+	button.btn.btn-primary {
+
+		/* Make the button position relative */
+		position: relative;
+
+		/* Move the button 42% of the viewport down */
+		top: 450%;
+
+		/* Move the button -99% of the viewport to the left */
+		left: -240%;
+	}
+}

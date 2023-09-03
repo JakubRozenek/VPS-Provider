@@ -1,0 +1,180 @@
+/* Import custom font style */
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Poppins:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+/* Apply to everything */
+* {
+
+	/* Font style in the navigation bar */
+	font-family: Montserrat, sans-serif;
+
+	/* Remove all the margin on the website */
+	margin: 0;
+
+	/* Remove all the padding on the website */
+	padding: 0;
+
+	/* Change the text to white when you hover over the name of the company */
+	color: rgba(255, 255, 255);
+}
+
+/* Main navigation bar */
+.navbar {
+
+	/* Background color of the navigation bar */
+	background-color: transparent;
+}
+
+/* Navigation bar links */
+.navbar-light .navbar-nav .nav-link {
+
+    /* Change color of the links text */
+    color: rgba(0, 0, 0, 1.0)!important;
+}
+
+/* If the screen resolution less than 320 px */
+@media (max-width: 480px) {
+
+    /* Navigation bar links */
+    .navbar-light .navbar-nav .nav-link {
+
+        /* Change color of the links text */
+        color: rgba(0, 0, 0, 1.0)!important;
+    }
+}
+
+/* Navigation bar links when hovering */
+.navbar-light .navbar-nav .nav-link:hover {
+
+    /* Change color of the links text */
+    color: rgba(255, 0, 0, 1.0)!important;
+}
+
+/* Section dividing the main page */
+section.hero {
+
+	/* Make the image the size of your viewport height */
+	height: 100vh;
+
+	/* Align the image to the middle of the screen */
+	text-align: center;
+
+	/* Make the image position relative */
+	position: relative;
+
+	/* Cover the entire section with the image */
+	background-size: cover;
+}
+
+/* Google maps */
+iframe {
+	/* Make the google maps position relative */
+	position: relative;
+
+	/* Move google maps to right */
+    left: 17%;
+
+	/* Move google maps downwards */
+	top: -20%;
+}
+
+/* Contact title */
+h1.contact-title {
+
+	/* Color of the text */
+	color: rgba(0, 0 ,0, 1.0);
+
+	/* Making the text position relative */
+	position: relative;
+
+	/* Moving the text to the left */
+	right: 20%;
+
+	/* Moving the text to the bottom */
+	top: 12%;
+}
+
+/* Contact description */
+p.contact-description {
+
+	/* Color of the text */
+	color: rgba(0, 0 ,0, 1.0);
+
+	/* Making the text position relative */
+	position: relative;
+
+	/* Moving the text to the left */
+	right: 20%;
+
+	/* Moving the text to the bottom */
+	top: 13%;
+}
+
+/* If the screen resolution less than 320 px */
+@media (max-width: 480px) {
+
+	/* Google maps */
+	iframe {
+		/* Make the google maps position relative */
+		position: relative!important;
+
+		/* Move google maps to right */
+	    left: 0%!important;
+
+		/* Move google maps downwards */
+		top: 15%!important;
+	}
+
+	/* Contact description */
+	p.contact-description {
+
+		/* Color of the text */
+		color: rgba(0, 0 ,0, 1.0)!important;
+
+		/* Making the text position relative */
+		position: relative!important;
+
+		/* Moving the text to the left */
+		right: -25%!important;
+
+		/* Moving the text to the bottom */
+		top: 14%!important;
+	}
+
+	/* Contact title */
+	h1.contact-title {
+
+		/* Color of the text */
+		color: rgba(0, 0 ,0, 1.0)!important;
+
+		/* Making the text position relative */
+		position: relative!important;
+
+		/* Moving the text to the left */
+		right: -24%!important;
+
+		/* Moving the text to the bottom */
+		top: 7%!important;
+	}
+}
+
+/* Mobile navigation bar toggler */
+button.navbar-toggler {
+
+	/* Make the button position relative */
+    position: relative;
+
+	/* Move the button to the right by 25% of the viewport */
+    left: 25vh;
+}
+
+/* Navigation toggle text */
+a.nav-link {
+
+	/* Make the button position relative */
+	position: relative;
+
+	/* Move the button to the right by 25% of the viewport */
+	left: 11vh;
+}
